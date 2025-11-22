@@ -30,13 +30,3 @@ def is_int(x):
         return False
 
 
-def anoth_sys(x, y):
-    if x == 0:
-        return "0"
-    res = ""
-    num = abs(x)
-
-    while num > 0:
-        res = str(num % y) + res
-    num //= y
-    return res

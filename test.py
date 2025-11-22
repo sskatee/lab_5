@@ -1,6 +1,6 @@
 import pytest
 
-from master import triangle, simple, length_str, is_int, anoth_sys
+from master import triangle, simple, length_str, is_int
 from sort import bubble_sort, selection_sort
 from for_fixture import *
 
@@ -21,6 +21,9 @@ def test_length_str():
 
 def test_is_int():
     assert is_int(15) == True
+    assert is_int('15') == False
+
+
 
 #проверка простых функций для фикстур
 @pytest.fixture()
